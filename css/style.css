@@ -762,9 +762,11 @@ input[type=checkbox]{
     font-size: 30px;
     margin-top: 10px;
   }
-  .footer__box-percent,
-  .big-button{
+  .footer__box-percent{
     margin-top: 35px;
+  }
+  .big-button{
+    margin: 45px auto 0;
   }
   .title-big{
     font-size: 37px;
@@ -799,6 +801,9 @@ input[type=checkbox]{
   }
   .container-mobil-title-big{
     width: 50%;
+  }
+  .ruble{
+    transform: translate(-100%, -100%);
   }
 }
 
@@ -856,5 +861,11 @@ input[type=checkbox]{
 @media (max-width: 372px){
   .form_radio_btn label{
     padding: 5px 9px;
+  }
+}
+
+@media (max-width: 333px) {
+  .warning-title{
+    font-size: 14px;
   }
 }
