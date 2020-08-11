@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Montserrat-Light";
+
+  src: url("../fonts/Montserrat-Light.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/Montserrat-Light.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
 *{
   padding: 0;
   margin: 0;
@@ -7,6 +16,8 @@
 body{
   background-image: url(../img/background/background.jpg);
   position: relative;
+  font-family: Montserrat-Light;
+  font-weight: lighter;
 }
 
 .header{
@@ -175,7 +186,7 @@ body{
 
 .card__description{
   color: #575757;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 100;
 }
 
