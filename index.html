@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Кредит-Безлимит</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="close-form" id="close-form">
+    <form action="" class="mobile-form">
+      <input class="form__input" type="number" name="sum-credit" placeholder="Сумма кредита" min="100000" step="50000">
+      <input class="form__input" type="text" name="full-name" placeholder="ФИО" required>
+      <input class="form__input" type="tel" name="tel" placeholder="+7 (___)___-__-__" required>
+      <div class="form__box">
+        <input type="checkbox" id="check" checked><label for="check">Даю согласие<br> на обработку данных</label>
+      </div>
+      <button class="button submit-button" name="submit">Отправить</button>
+    </form>
+  </div>
+  <div class="container">
+    <header class="header padding-left">
+      <a href="index.html" class="logo">
+        <img src="img/logo/logo.png" alt="" class="logo">
+      </a>
+      <button class="button buttton-header">
+        +7 (383) 210-67-92
+      </button>
+      <button class="button-mobile">
+        
+      </button>
+    </header>
+  </div>
+    <div class="container">
+        <div class="col_1-and-col_2 padding-left">
+           <section class="col col-1">
+            <div class="container-mobil-title-big">
+              <h1 class="title-big">
+                Кредит 
+                на любые цели <br><span>с плохой кредитной историей, без проверок</span>
+              </h1>              
+            </div>
+          </section>
+          <section class="col col-2">
+<!--             <img src="img/girl/girl.png" alt="girl"> -->
+          </section>     
+        </div>
+        <div class="col_3-and-col_4">
+          <section class="col col-3">
+              <div class="card">
+                <img src="img/ico/money.png" alt="money" class="card__img">
+                <h3 class="card__description">Кредит без <br> проверок истории</h3>
+              </div>
+              <div class="card">
+                <img src="img/ico/phone.png" alt="phone" class="card__img">
+                <h3 class="card__description">Кредит с плохой кредитной историей</h3>
+              </div>              
+          </section>
+          <form action="" class="form">
+            <input class="form__input" type="number" name="sum-credit" placeholder="Сумма кредита" min="100000" step="50000">
+            <input class="form__input" type="text" name="full-name" placeholder="ФИО" required>
+            <input class="form__input" type="tel" name="tel" placeholder="+7 (___)___-__-__" required>
+            <div class="form__box">
+              <input type="checkbox" id="check" checked><label for="check">Даю согласие<br> на обработку данных</label>
+            </div>
+            <button class="button submit-button" name="submit">Отправить</button>
+          </form>
+          <section class="col col-4">
+              <div class="card">
+                <img src="img/ico/time.png" alt="time" class="card__img">
+                <h3 class="card__description">Кредит <br> с просрочками</h3>
+              </div>
+              <div class="card">
+                <img src="img/ico/portfolio.png" alt="portfolio" class="card__img card__img-portfolio">
+                <h3 class="card__description">Кредит <br> без справок</h3>
+              </div>              
+          </section> 
+      </div>
+      <footer class="footer">
+        <div class="footer__box-calculation">
+          <div class="footer__box-calculation__box">
+            <h5 class="footer__title_gray">Сумма кредита</h5>
+            <div class="footer__sum"></div> <!-- получает число из id control -->            
+          </div>
+          <input type="range" min="100000" max="5000000" value="1750000" step="50000" id="control">
+          <div class="footer__box-calculation__dimension">
+            <p class="footer__title_gray">100 тыс.</p>
+            <p class="footer__title_gray">1 млн.</p>
+            <p class="footer__title_gray">2 млн.</p>
+            <p class="footer__title_gray">3 млн.</p>
+            <p class="footer__title_gray">4 млн.</p>
+            <p class="footer__title_gray">5 млн.</p>
+          </div>
+        </div>
+        <div class="footer__box-years">
+          <h4 class="footer__title">Выберите срок</h4>
+          <div class="footer__box-years__box-buttons">
+              <div class="form_radio_btn">
+                <input id="radio-1" class="radio" type="radio" name="radio" value="1">
+                <label for="radio-1">1 год</label>
+              </div>
+              <div class="form_radio_btn">
+                <input id="radio-2" class="radio" type="radio" name="radio" value="2">
+                <label for="radio-2">2 года</label>
+              </div>
+              <div class="form_radio_btn">
+                <input id="radio-3" class="radio" type="radio" name="radio" value="3">
+                <label for="radio-3">3 года</label>
+              </div>
+              <div class="form_radio_btn">
+                <input id="radio-4" class="radio" type="radio" name="radio" value="4">
+                <label for="radio-4">4 года</label>
+              </div>
+              <div class="form_radio_btn">
+                <input id="radio-5" class="radio" type="radio" name="radio" value="5" checked>
+                <label for="radio-5">5 лет</label>
+              </div>
+          </div>
+            <p class="description">Расчет калькулятора произведен по ставкам, действующим при <br>
+            условии оформления финансовой защиты к кредиту. Не является<br>
+            публичной офертой.</p>
+        </div>
+        <div class="footer__box-sentence">
+          <h4 class="footer__title">Наше предложение</h4>
+          <div class="footer__box-sentence__output">
+            <h5 class="footer__title_gray">Ежемесячный платеж</h5>
+            <p class="footer__box-sentence__output__value">33 256 ₽</p>
+          </div>
+          <div class="footer__box-percent">
+            <h5 class="footer__title_gray">Процентная ставка</h5>
+            <p class="footer__box-sentence__output__value">6,5%</p>
+          </div>
+        </div>
+
+          <button id="btn-form" class="button big-button footer__button">Заполнить заявку<p>Заявка с сайта гарантирует получение кредита</p></button>
+<!--         <button id="btn-form" class="button big-button footer__button">Заполнить заявку</button> -->
+      </footer>
+    </div>
+  <script src="js/common.js"></script>
+</body>
+</html>
