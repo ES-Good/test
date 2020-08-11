@@ -7,14 +7,14 @@ let col_4 = document.querySelector('.col-4');
 let form = document.querySelector('.form');
 let mobileForm = document.querySelector('.mobile-form');
 let closeForm = document.querySelector('.close-form');
-
+let warning = document.querySelector('.warning-title');
 
 
 
 
 function calc() {
     function calcStartPage() {
-    outputSumPay.innerText = getPayment(+inputControl.value, checkedRadio(), 6.5) + ' ';
+    outputSumPay.innerText = getPayment(+inputControl.value, checkedRadio(), 6.5);
     outputSum.value = inputControl.value;
   }
 
@@ -22,7 +22,7 @@ function calc() {
 
   inputControl.oninput = function () {
     outputSum.value = inputControl.value;
-    outputSumPay.innerText = getPayment(+inputControl.value,checkedRadio(), 6.5) + ' ';
+    outputSumPay.innerText = getPayment(+inputControl.value,checkedRadio(), 6.5);
   }
 
   function checkedRadio() {
@@ -37,7 +37,16 @@ function calc() {
 
   for (var i = 0; i < radioButton.length; i++) {
     radioButton[i].onchange = function (){
-      outputSumPay.innerText = getPayment(+inputControl.value,checkedRadio(), 6.5) + ' ';
+      outputSumPay.innerText = getPayment(+inputControl.value,checkedRadio(), 6.5);
+    }
+  }
+
+  outputSum.onchange = function () {
+    if (+outputSum.value < 100000) {
+      warning.innerText = 'Процент одобрения кредита: 10%';
+    }else if (+outputSum.value > 100000) {
+      warning.innerText = 'Процент одобрения кредита: 95%';
+      outputSumPay.innerText = getPayment(+outputSum.value,checkedRadio(), 6.5);
     }
   }
 }
