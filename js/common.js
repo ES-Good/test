@@ -14,7 +14,7 @@ let closeForm = document.querySelector('.close-form');
 
 function calc() {
     function calcStartPage() {
-    outputSumPay.innerText = getPayment(+inputControl.value, checkedRadio(), 6.5) + ' ' + '₽';
+    outputSumPay.innerText = getPayment(+inputControl.value, checkedRadio(), 6.5) + ' ';
     outputSum.value = inputControl.value;
   }
 
@@ -22,7 +22,7 @@ function calc() {
 
   inputControl.oninput = function () {
     outputSum.value = inputControl.value;
-    outputSumPay.innerText = getPayment(+inputControl.value,checkedRadio(), 6.5) + ' ' + '₽';
+    outputSumPay.innerText = getPayment(+inputControl.value,checkedRadio(), 6.5) + ' ';
   }
 
   function checkedRadio() {
@@ -37,7 +37,7 @@ function calc() {
 
   for (var i = 0; i < radioButton.length; i++) {
     radioButton[i].onchange = function (){
-      outputSumPay.innerText = getPayment(+inputControl.value,checkedRadio(), 6.5) + ' ' + '₽';
+      outputSumPay.innerText = getPayment(+inputControl.value,checkedRadio(), 6.5) + ' ';
     }
   }
 }
