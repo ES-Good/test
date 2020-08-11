@@ -498,7 +498,7 @@ input[type=checkbox]{
     font-size: 42px;
   }
   .card__description{
-    font-size: 20px;
+    font-size: 18px;
   }
   .col{
     flex-basis: 300px;
