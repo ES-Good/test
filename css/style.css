@@ -839,6 +839,18 @@ input[type=checkbox]{
     background-position: 240px bottom;
     background-size: 240px;
   }
+  .mobile-form {
+    width: 300px;
+    padding: 25px 20px;
+    top: 70%;
+  }
+  .form__input{
+    height: 52px;
+    margin-bottom: 20px;
+  }
+  .submit-button{
+    padding: 20px 70px;
+  }
 }
 
 @media (max-width: 360px){
