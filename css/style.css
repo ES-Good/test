@@ -29,7 +29,6 @@ body{
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  height: 120px;
   width: 100%;
 }
 
@@ -41,8 +40,7 @@ body{
 }
 
 .logo{
-  width: 100px;
-  height: 100px;
+  width: 140px;
 }
 
 .logo img{
@@ -50,7 +48,7 @@ body{
 }
 
 .title-big{
-  font-size: 70px;
+  font-size: 50px;
   color: #0d8ebd;
   margin-bottom: 60px;
 }
@@ -128,7 +126,7 @@ body{
 }
 
 .col-1{
-  padding-top: 140px;
+  padding-top: 50px;
 }
 
 .col_1-and-col_2,
@@ -186,7 +184,7 @@ body{
 
 .card__description{
   color: #575757;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 100;
 }
 
@@ -497,7 +495,7 @@ input[type=checkbox]{
 
 @media (max-width: 1902px) {
   .title-big{
-    font-size: 50px;
+    font-size: 42px;
   }
   .card__description{
     font-size: 20px;
