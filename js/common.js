@@ -44,6 +44,7 @@ function calc() {
   outputSum.onchange = function () {
     if (+outputSum.value < 100000) {
       warning.innerText = 'Процент одобрения кредита: 10%';
+      outputSumPay.innerText = getPayment(+outputSum.value,checkedRadio(), 6.5);
     }else if (+outputSum.value > 100000) {
       warning.innerText = 'Процент одобрения кредита: 95%';
       outputSumPay.innerText = getPayment(+outputSum.value,checkedRadio(), 6.5);
