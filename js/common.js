@@ -21,6 +21,7 @@ function calc() {
   calcStartPage();
 
   inputControl.oninput = function () {
+    warning.innerText = 'Процент одобрения кредита: 95%';
     outputSum.value = inputControl.value;
     outputSumPay.innerText = getPayment(+inputControl.value,checkedRadio(), 6.5);
   }
