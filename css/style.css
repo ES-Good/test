@@ -264,7 +264,6 @@ body{
   display: block;
 }
 
-
 input[type=range]{
    -webkit-appearance: none;
    position: relative;
@@ -688,7 +687,7 @@ input[type=checkbox]{
     flex-direction: column;
     align-items: normal;
     flex-wrap: nowrap;
-    padding: 45px 25px;
+    padding: 35px 25px;
   }
   .footer__box-calculation{
     flex-basis: 100%;
