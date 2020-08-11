@@ -11,16 +11,17 @@ let closeForm = document.querySelector('.close-form');
 
 
 
+
 function calc() {
     function calcStartPage() {
     outputSumPay.innerText = getPayment(+inputControl.value, checkedRadio(), 6.5) + ' ' + '₽';
-    outputSum.innerText = inputControl.value;
+    outputSum.value = inputControl.value;
   }
 
   calcStartPage();
 
   inputControl.oninput = function () {
-    outputSum.innerText = inputControl.value;
+    outputSum.value = inputControl.value;
     outputSumPay.innerText = getPayment(+inputControl.value,checkedRadio(), 6.5) + ' ' + '₽';
   }
 

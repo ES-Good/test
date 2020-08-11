@@ -209,10 +209,13 @@ body{
 }
 
 .footer__sum{
-  color: #575757;
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 10px;
+    color: #575757;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    background: none;
+    outline: none;
+    border: none;
 }
 
 .footer__box-calculation__dimension{
@@ -698,7 +701,7 @@ input[type=checkbox]{
   }
   .footer__box-percent,
   .big-button{
-    margin-top: 20px;
+    margin-top: 35px;
   }
   .title-big{
     font-size: 37px;
