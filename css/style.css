@@ -503,20 +503,7 @@ input[type=checkbox]{
   .col{
     flex-basis: 300px;
   }
-}
-
-@media (max-width: 1892px){
-  .padding-left{
-    padding-left: 0;
-  }
-  .footer__box-percent, .footer__box-sentence__output {
-    display: inline-block;
-    margin-right: 10px;
-  }
-}
-
-@media (max-width: 1681px){
-  .big-button{
+    .big-button{
     font-size: 16px;
     padding: 16px 30px;
   }
@@ -531,9 +518,60 @@ input[type=checkbox]{
   }
 }
 
+@media (max-width: 1892px){
+  .padding-left{
+    padding-left: 0;
+  }
+  .footer__box-percent, .footer__box-sentence__output {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+/*@media (max-width: 1681px){
+  .big-button{
+    font-size: 16px;
+    padding: 16px 30px;
+  }
+  .footer__box-sentence__output__value{
+    font-size: 24px;
+  }
+  .form_radio_btn label{
+    font-size: 12px;
+  }
+  .footer__box-calculation{
+    flex-basis: 320px;
+  }
+}
+*/
 @media (max-width: 1581px){
   .form{
     width: 340px;
+  }
+}
+
+@media (max-width: 1525px){
+  .footer__box-calculation {
+    flex-basis: 300px;
+  }
+  .form_radio_btn label {
+    font-size: 10px;
+    padding: 3px 11px;
+  }
+  .ruble{
+    font-size: 25px;
+  }
+  .footer__title_gray{
+    font-size: 12px;
+  }
+  .footer__box-sentence__output__value {
+    font-size: 20px;
+  }
+  .footer__title{
+    font-size: 16px;
+  }
+  .description{
+    font-size: 10px;
   }
 }
 
