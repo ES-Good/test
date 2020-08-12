@@ -86,8 +86,8 @@ body{
   display: none;
   cursor: pointer;
   outline: none;
-  width: 26px;
-  height: 26px;
+  width: 36px;
+  height: 36px;
   background-image: url(../img/ico/phone-view/phone.png);
   background-color: #0000;
   background-repeat: no-repeat;
@@ -529,22 +529,6 @@ input[type=checkbox]{
   }
 }
 
-/*@media (max-width: 1681px){
-  .big-button{
-    font-size: 16px;
-    padding: 16px 30px;
-  }
-  .footer__box-sentence__output__value{
-    font-size: 24px;
-  }
-  .form_radio_btn label{
-    font-size: 12px;
-  }
-  .footer__box-calculation{
-    flex-basis: 320px;
-  }
-}
-*/
 @media (max-width: 1581px){
   .form{
     width: 340px;
