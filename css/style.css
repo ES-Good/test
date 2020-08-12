@@ -191,6 +191,7 @@ body{
 .description{
   color: #b0b3b9;
   font-size: 12px;
+  margin-bottom: 15px;
 }
 
 .footer{
@@ -366,7 +367,7 @@ input[type='range']::-webkit-slider-runnable-track{
 }
 
 .footer__title_gray{
-  font-size: 14px;
+  font-size: 12px;
   color: #b0b3b9;
 }
 
@@ -388,7 +389,7 @@ input[type='range']::-webkit-slider-runnable-track{
 }
 
 .big-button{
-  font-size: 24px;
+  font-size: 20px;
   padding: 30px 45px;
   font-weight: bold;
 }
@@ -547,6 +548,12 @@ input[type=checkbox]{
 @media (max-width: 1581px){
   .form{
     width: 340px;
+  }
+}
+
+@media (max-width: 1542px){
+  .footer__box-calculation{
+    flex-basis: 300px;
   }
 }
 

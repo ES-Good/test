@@ -48,6 +48,7 @@ function calc() {
       outputSumPay.innerText = getPayment(+outputSum.value,checkedRadio(), 6.5);
     }else if (+outputSum.value >= 100000) {
       warning.innerText = 'Процент одобрения кредита: 95%';
+      inputControl.value = outputSum.value;
       outputSumPay.innerText = getPayment(+outputSum.value,checkedRadio(), 6.5);
     }
   }
