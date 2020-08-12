@@ -242,6 +242,7 @@ body{
     font-weight: bold;
     transform: translate(-100%, -100%);
     right: 0;
+    color: green;
 }
 
 .footer__box-calculation__dimension{
@@ -375,6 +376,11 @@ input[type='range']::-webkit-slider-runnable-track{
   font-size: 30px;
   font-weight: bold;
   margin-top: 15px;
+  color: green;
+}
+
+.footer__box-percent p{
+  color: #0d8ebd;
 }
 
 .footer__box-sentence__output{
