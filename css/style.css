@@ -240,7 +240,7 @@ body{
     position: absolute;
     font-size: 24px;
     font-weight: bold;
-    transform: translate(-100%, -100%);
+    transform: translate(0, -100%);
     right: 0;
     color: green;
 }
@@ -800,7 +800,7 @@ input[type=checkbox]{
     width: 50%;
   }
   .ruble{
-    transform: translate(-100%, -100%);
+    transform: translate(0, -100%);
   }
 }
 

@@ -14,16 +14,16 @@ let warning = document.querySelector('.warning-title');
 
 function calc() {
     function calcStartPage() {
-    outputSumPay.innerText = getPayment(+inputControl.value, checkedRadio(), 6.5);
-    outputSum.value = inputControl.value;
+    outputSumPay.innerText = prettify(getPayment(+inputControl.value, checkedRadio(), 6.5));
+    outputSum.value = prettify(inputControl.value);
   }
 
   calcStartPage();
 
   inputControl.oninput = function () {
     warning.innerText = 'Процент одобрения кредита: 95%';
-    outputSum.value = inputControl.value;
-    outputSumPay.innerText = getPayment(+inputControl.value,checkedRadio(), 6.5);
+    outputSum.value = prettify(inputControl.value);
+    outputSumPay.innerText = prettify(getPayment(+inputControl.value,checkedRadio(), 6.5));
   }
 
   function checkedRadio() {
@@ -38,18 +38,20 @@ function calc() {
 
   for (var i = 0; i < radioButton.length; i++) {
     radioButton[i].onchange = function (){
-      outputSumPay.innerText = getPayment(+inputControl.value,checkedRadio(), 6.5);
+      outputSumPay.innerText = prettify(getPayment(+inputControl.value,checkedRadio(), 6.5));
     }
   }
 
   outputSum.onchange = function () {
     if (+outputSum.value < 100000) {
       warning.innerText = 'Процент одобрения кредита: 10%';
-      outputSumPay.innerText = getPayment(+outputSum.value,checkedRadio(), 6.5);
+      outputSumPay.innerText = prettify(getPayment(+outputSum.value,checkedRadio(), 6.5));
+      outputSum.value = prettify(outputSum.value);
     }else if (+outputSum.value >= 100000) {
       warning.innerText = 'Процент одобрения кредита: 95%';
       inputControl.value = outputSum.value;
-      outputSumPay.innerText = getPayment(+outputSum.value,checkedRadio(), 6.5);
+      outputSumPay.innerText = prettify(getPayment(+outputSum.value,checkedRadio(), 6.5));
+      outputSum.value = prettify(outputSum.value);
     }
   }
 }
@@ -95,4 +97,9 @@ document.onclick = function (event) {
     closeForm.classList.remove('show-close-form');
     mobileForm.classList.remove('show-form');
   }
+}
+
+function prettify(num) {
+  var n = num.toString();
+  return n.replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1" + ' ');
 }
